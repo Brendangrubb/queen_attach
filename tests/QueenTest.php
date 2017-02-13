@@ -34,6 +34,24 @@ class QueenTest extends PHPUnit_Framework_TestCase
         //Assert
         $this->assertEquals(true, $result);
     }
+
+    function test_canAttackDiagonally()
+    {
+        //Arrange
+        $test_Queen = new Queen;
+        $input1 = intval(1);
+        $input2 = intval(1);
+        $input3 = intval(8);
+        $input4 = intval(8);
+        $diagonal_difference = 7;
+
+
+        //Act
+        $result = $test_Queen->canAttackDiagonally($input1, $input2, $input3, $input4, $diagonal_difference);
+
+        //Assert
+        $this->assertEquals(true, $result);
+    }
 }
 
 

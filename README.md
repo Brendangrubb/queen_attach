@@ -19,11 +19,11 @@ Remember to write your tests in plain english and get them checked first. Don't 
 
 |Behavior|Input|Output|
 |--------|-----|------|
-| Queen x coordinate matches Opponent x coordinate | Queen X input is d, Queen Y input is 3 // Opponent X input is d and Opponent Y input is 8 | Queen wins attack |   
-| Queen y coordinate matches Opponent y coordinate | Queen X input is a and Queen Y input is 7, Opponent X input is f and Opponent Y input is 7 | Queen wins attack |   
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Queen wins attack horizontally | Queen X input is d, Queen Y input is 3 // Opponent X input is d and Opponent Y input is 8 | Queen wins attack |   
+| Queen wins attack vertically | Queen X input is a and Queen Y input is 7 // Opponent X input is f and Opponent Y input is 7 | Queen wins attack |
+| Queen wins attack diagonally | Queen X input is a, Queen Y input is 1 // Opponent X input is h and Opponent Y input is 8 | Queen wins attack |
+| Queen looses attack |  Queen X input is a, Queen Y input is 1 // Opponent X input is c and Opponent Y input is 2 |  |
+
 
 
 

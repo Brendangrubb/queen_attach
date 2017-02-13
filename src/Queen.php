@@ -32,20 +32,25 @@
 
         function canAttackX($queen_x, $opponent_x)
         {
-            if ($queen_x = $opponent_x)
+            if ($queen_x == $opponent_x)
             {
                 return true;
             }
-
         }
 
         function canAttackY($queen_y, $opponent_y)
         {
-            if ($queen_y = $opponent_y)
+            if ($queen_y == $opponent_y)
             {
                 return true;
             }
+        }
 
+        function canAttackDiagonally($queen_x, $queen_y, $opponent_x, $opponent_y, $diagonal_difference)
+        {
+            if ($queen_x + $diagonal_difference == $opponent_y && $queen_y  + $diagonal_difference == $opponent_x) {
+                return true;
+            }
         }
     }
 

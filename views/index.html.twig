@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <title>Queen</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Queen Attack!</h1>
+                <p>Will the queen defeat her opponent?</p>
+            </div>
+
+            <img src="img/chess_board.jpeg" alt="picture of a chess board" />
+            <p>Enter coordinates for a queen and then enter coordinates for her opponent. We will let you knoe if the attack lands!</p>
+            <form action="/">
+                <div class="form-group">
+                    <label for="queen_x">Queen X</label>
+                    <input id="queen_x" class="form-control" type="text" name="queen_x">
+                </div>
+                <div class="form-group">
+                    <label for="queen_y">Queen Y</label>
+                    <input id="queen_y" class="form-control" type="text" name="queen_y">
+                </div>
+                <div class="form-group">
+                    <label for="opponent_x">Opponent X</label>
+                    <input id="opponent_x" class="form-control" type="text" name="opponent_x">
+                </div>
+                <div class="form-group">
+                    <label for="opponent_y">Opponent Y</label>
+                    <input id="opponent_y" class="form-control" type="text" name="opponent_y">
+                </div>
+                <button type="submit" class="btn" name="button">Submit</button>
+            </form>
+        </div>
+
+    </body>
+</html>

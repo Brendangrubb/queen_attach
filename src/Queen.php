@@ -30,13 +30,28 @@
         //     return $opponent_y;
         // }
 
-        function canAttack($queen_x, $queen_y, $opponent_x, $opponent_y)
+        function canAttackX($queen_x, $opponent_x)
         {
-            if ($queen_x = $opponent_x) {
+            if ($queen_x = $opponent_x)
+            {
                 return true;
             }
+
+        }
+
+        function canAttackY($queen_y, $opponent_y)
+        {
+            if ($queen_y = $opponent_y)
+            {
+                return true;
+            }
+
         }
     }
+
+
+
+
 
 
 

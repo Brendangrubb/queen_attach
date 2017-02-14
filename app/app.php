@@ -9,7 +9,24 @@
     $app['debug']= true;
 
     $app->get('/', function() use($app){
+
         return $app['twig']->render('index.html.twig');
+
+    });
+
+    $app->get('/result_hit', function() use($app){
+        $new_move = new Queen($_GET["queen_x"], $_GET["queen_y"], $_GET["opponent_x"], $_GET["opponent_x"]);
+        // $diagonal_difference = "";
+
+        return $app['twig']->render('result_hit.html.twig', array('new_move'=> $new_move));
+
+    });
+
+    $app->get('/result_miss', function() use($app){
+        $new_move = new Queen($_GET["queen_x"], $_GET["queen_y"], $_GET["opponent_x"], $_GET["opponent_x"]);
+        // $diagonal_difference = "";
+
+        return $app['twig']->render('result_miss.html.twig', array('new_move'=> $new_move));
 
     });
 
